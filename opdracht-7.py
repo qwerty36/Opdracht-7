@@ -32,8 +32,7 @@ class zincfingerfinder:
         self.formatdata()
     def zoekpatroon(self):        
         peptidedictionary, i = {}, -1    
-        #pattern = re.compile('C.[DNEHQSTI]C.{4,6}[ST]..[WM][HR][RKENAMSLPGQT].{3,4}[GNEP].{3,6}C[NES][ASNR]C')
-        pattern = re.compile('[AC]')        
+        pattern = re.compile('C.[DNEHQSTI]C.{4,6}[ST]..[WM][HR][RKENAMSLPGQT].{3,4}[GNEP].{3,6}C[NES][ASNR]C')    
         for item in self.slijst:
             i += 1
             if pattern.search(item):
